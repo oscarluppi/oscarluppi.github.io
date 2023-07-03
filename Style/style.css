@@ -25,6 +25,11 @@
     height: 650px;
 }
 
+.div-body-home {
+    background-color: #BFBFBF;
+    height: 550px;
+}
+
 .div-immagini {
     height: 450px;
     display: flex;
