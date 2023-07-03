@@ -20,6 +20,13 @@
     justify-content: center;
 }
 
+.div-bottoni-elenchi {
+    background-color: #467326;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .div-body {
     background-color: #BFBFBF;
     height: 650px;
@@ -28,6 +35,11 @@
 .div-body-home {
     background-color: #BFBFBF;
     height: 550px;
+}
+
+.div-body-anno {
+    background-color: #BFBFBF;
+    height: auto;
 }
 
 .div-immagini {
