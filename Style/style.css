@@ -1,3 +1,7 @@
+.html {
+    display: contents;
+}
+
 .div-titolo {
     background-color: #B2F252;
     text-align: center;
@@ -71,4 +75,11 @@
     justify-content: center;
     text-align: left;
     font-family: Arial;
+}
+
+.testo-centrato {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial;   
 }
