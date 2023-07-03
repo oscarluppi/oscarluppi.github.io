@@ -1,0 +1,74 @@
+.div-titolo {
+    background-color: #B2F252;
+    text-align: center;
+    font-size: 40px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.div-bottoni {
+    background-color: #467326;
+    display: flex;
+    justify-content: center;
+}
+
+.div-body {
+    background-color: #BFBFBF;
+    height: 650px;
+}
+
+.div-immagini {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.immagini {
+    height: 400px;
+    width: auto;
+}
+
+.immagini:hover {
+    height: 400px;
+    width: auto;
+    transform: scale(1.3);
+}
+
+.div-descrizione {
+    background-color: #A0D94A;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.testo-bottoni {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial;
+    color: #000000;
+}
+
+.bottoni {
+    width: auto;
+    height: 30px;
+    text-align: center;
+    background-color: #EFF299;
+}
+
+.footer {
+    background-color: #79A637;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: Arial;
+}
