@@ -6,7 +6,7 @@
 <html class="html">
     <head>
 
-        <div class="div-titolo"> 2019 </div>
+        <div class="div-titolo"> 2018 </div>
 
         <div class="div-bottoni">
           <button class="bottoni"><a href="../CATEGORIE.html"  class="testo-bottoni"> Back </a></button>
@@ -24,10 +24,10 @@
 
             <div class="div-descrizione">
 
-                <h3> Sezione quadri anno 2019 </h3>
+                <h3> Sezione quadri anno 2018 </h3>
 
                 <h5 class="testo-centrato">
-                    Qui sotto trovi tutti i quadri dell'anno 2019 
+                    Qui sotto trovi tutti i quadri dell'anno 2018 
                 </h5>
 
                 <div id="buttons-container" class="div-bottoni-elenchi"></div>
@@ -50,7 +50,7 @@
 
 <html>
 <head>
-  <title> Anno 2019 </title>
+  <title> Anno 2018 </title>
   <style>
     .button {
         width: auto;
@@ -70,11 +70,11 @@
 
   <script>
     // Directory che contiene i file HTML
-    const directory = '../ANNI/2019/';
+    const directory = '../ANNI/2018/';
 
     // Lista dei nomi dei file HTML
     const fileNames = [
-      'aura_rupestre.html',
+      'vagando_nei_ricordi.html',
       // Aggiungi qui gli altri nomi dei file HTML
     ];
 
@@ -83,7 +83,7 @@
     fileNames.forEach(filename => {
         const button = document.createElement('button');
         const buttonText = document.createElement('span');
-        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ');
+        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ').replace('_', ' ');
         buttonText.classList.add('button-text');
         button.appendChild(buttonText);
         button.classList.add('button');
