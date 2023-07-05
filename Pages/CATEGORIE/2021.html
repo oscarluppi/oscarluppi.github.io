@@ -75,6 +75,7 @@
     // Lista dei nomi dei file HTML
     const fileNames = [
       'caffe_inglese.html',
+      'donna_con_fiore_cappello.html',
       // Aggiungi qui gli altri nomi dei file HTML
     ];
 
@@ -83,7 +84,7 @@
     fileNames.forEach(filename => {
         const button = document.createElement('button');
         const buttonText = document.createElement('span');
-        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ');
+        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ').replace('_', ' ').replace('_', ' ').replace('_', ' ');
         buttonText.classList.add('button-text');
         button.appendChild(buttonText);
         button.classList.add('button');
