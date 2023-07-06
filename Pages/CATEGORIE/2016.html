@@ -6,7 +6,7 @@
 <html class="html">
     <head>
 
-        <div class="div-titolo"> 2021 </div>
+        <div class="div-titolo"> 2016 </div>
 
         <div class="div-bottoni">
           <button class="bottoni"><a href="../CATEGORIE.html"  class="testo-bottoni"> Back </a></button>
@@ -24,10 +24,10 @@
 
             <div class="div-descrizione">
 
-                <h3> Sezione quadri anno 2021 </h3>
+                <h3> Sezione quadri anno 2016 </h3>
 
                 <h5 class="testo-centrato">
-                    Qui sotto trovi tutti i quadri dell'anno 2021 
+                    Qui sotto trovi tutti i quadri dell'anno 2016
                 </h5>
 
                 <div id="buttons-container" class="div-bottoni-elenchi"></div>
@@ -50,7 +50,7 @@
 
 <html>
 <head>
-  <title> Anno 2021 </title>
+  <title> Anno 2016 </title>
   <style>
     .button {
         width: auto;
@@ -70,14 +70,11 @@
 
   <script>
     // Directory che contiene i file HTML
-    const directory = '../ANNI/2021/';
+    const directory = '../ANNI/2016/';
 
     // Lista dei nomi dei file HTML
     const fileNames = [
-      'caffe_inglese.html',
-      'donna_con_fiore_cappello.html',
-      'monoplano.html',
-      'incuneandosi_nell\'abitato.html'
+      'il_bacio.html',
       // Aggiungi qui gli altri nomi dei file HTML
     ];
 
@@ -86,7 +83,7 @@
     fileNames.forEach(filename => {
         const button = document.createElement('button');
         const buttonText = document.createElement('span');
-        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ').replace('_', ' ').replace('_', ' ').replace('_', ' ');
+        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ');
         buttonText.classList.add('button-text');
         button.appendChild(buttonText);
         button.classList.add('button');
