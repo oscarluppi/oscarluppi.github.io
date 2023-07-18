@@ -85,7 +85,7 @@
     fileNames.forEach(filename => {
         const button = document.createElement('button');
         const buttonText = document.createElement('span');
-        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ');
+        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ').replace('_', ' ').replace('_', ' ');
         buttonText.classList.add('button-text');
         button.appendChild(buttonText);
         button.classList.add('button');
