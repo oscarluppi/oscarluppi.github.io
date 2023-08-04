@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title> Categorie </title>
     </head>
 
     <header>
@@ -37,7 +37,28 @@
                     Qui sotto trovi tutti i quadri suddivisi per annata.
                 </h5>
 
-                <div id="buttons-container" class="div-bottoni-elenchi"></div>
+                <nav>
+                  <ul>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2006.html"> 2006 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2007.html"> 2007 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2008.html"> 2008 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2009.html"> 2009 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2010.html"> 2010 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2011.html"> 2011 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2012.html"> 2012 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2013.html"> 2013 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2014.html"> 2014 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2015.html"> 2015 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2016.html"> 2016 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2017.html"> 2017 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2018.html"> 2018 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2019.html"> 2019 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2020.html"> 2020 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2021.html"> 2021 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2022.html"> 2022 </a></li>
+                    <li class="body_li"><a class="body_a" href="CATEGORIE/2023.html"> 2023 </a></li>
+                  </ul>
+                </nav>
                 
                 <h5></h5>
 
@@ -51,73 +72,4 @@
         Luppi Oscar, Copyright &copy; 2023
     </footer>
     
-</html>
-
-
-
-<html>
-<head>
-  <title> CATEGORIE </title>
-  <style>
-    .button {
-        width: auto;
-        height: 30px;
-        text-align: center;
-        background-color: #EFF299;
-    }
-    .button-text {
-        text-decoration: none;
-        font-weight: bold;
-        font-family: Arial;
-        color: #000000;
-    }
-  </style>
-</head>
-<body>
-
-  <script>
-    // Directory che contiene i file HTML
-    const directory = './CATEGORIE/';
-
-    // Lista dei nomi dei file HTML
-    const fileNames = [
-        '2004.html',
-        '2005.html',
-        '2006.html',
-        '2007.html',
-        '2008.html',
-        '2009.html',
-        '2010.html',
-        '2011.html',
-        '2012.html',
-        '2013.html',
-        '2014.html',
-        '2015.html',
-        '2016.html',
-        '2017.html',
-        '2018.html',
-        '2019.html',
-        '2020.html',
-        '2021.html',
-        '2022.html',
-        '2023.html'
-      // Aggiungi qui gli altri nomi dei file HTML
-    ];
-
-    // Genera i bottoni per i file HTML
-    const buttonsContainer = document.getElementById('buttons-container');
-    fileNames.forEach(filename => {
-        const button = document.createElement('button');
-        const buttonText = document.createElement('span');
-        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ');
-        buttonText.classList.add('button-text');
-        button.appendChild(buttonText);
-        button.classList.add('button');
-        button.addEventListener('click', () => {
-        window.location.href = directory + filename;
-      });
-      buttonsContainer.appendChild(button);
-    });
-  </script>
-</body>
 </html>
