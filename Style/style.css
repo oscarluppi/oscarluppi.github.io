@@ -44,7 +44,7 @@
 
 .div-body-home {
     background-color: #BFBFBF;
-    height: 550px;
+    height: auto;
 }
 
 .div-body-anno {
@@ -71,7 +71,7 @@
 }
 
 .div-descrizione {
-    background-color: #A0D94A;
+    background-color: #B2F252;
     text-align: left;
     justify-content: center;
     display: flex;
@@ -206,4 +206,17 @@ header a:hover{
     display:inline-flex;
     padding: 0 20px 0 20px;
     border:#79A637 3px solid;
+}
+
+.body_li_2{
+    text-align: center;
+    font-family: Arial;
+    font-size: large;
+}
+
+.body_div_img {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

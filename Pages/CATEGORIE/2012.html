@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-
-
 <link rel="stylesheet" href="../../Style/style.css">
 
 <html class="html">
-    <head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 2012 </title>
+  </head>
 
-        <div class="div-titolo"> 2012 </div>
-
-        <div class="div-bottoni">
-          <button class="bottoni"><a href="../CATEGORIE.html"  class="testo-bottoni"> Back </a></button>
-
-          <button class="bottoni"><a href="../../index.html"  class="testo-bottoni"> Home </a></button>
-
-          <button class="bottoni"><a href="../CATEGORIE.html" class="testo-bottoni"> Categorie </a></button>
+  <header>
+    <div class="container">
+        <div id="branding">
+          <h1><span class="highlight"> Oscar </span> Luppi </h1>
         </div>
-
-    </head>
+        <nav>
+          <ul>
+            <li><a href="../index.html"> Home </a></li>
+            <li><a href="../CATEGORIE.html"> Categorie</a></li>
+            <li><a href="../info.html"> informazioni </a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
 
     <body>
 
@@ -24,13 +28,30 @@
 
             <div class="div-descrizione">
 
-                <h3> Sezione quadri anno 2012 </h3>
+                <h2> 2012 </h2>
 
-                <h5 class="testo-centrato">
-                    Qui sotto trovi tutti i quadri dell'anno 2012
-                </h5>
+                <h4 class="testo-centrato">
+                    Qui sotto trovi tutti i quadri dell'anno 2012 
+                </h4>
 
-                <div id="buttons-container" class="div-bottoni-elenchi"></div>
+                <nav>
+                  <ul>
+                    <li class="body_li"><a class="body_a" href="../CATEGORIE.html"> Back </a></li>
+                  </ul>
+                </nav>
+
+                <h1></h1>
+
+                <nav>
+                  <ul>
+                    <li class="body_li"><a class="body_a" href="../ANNI/2012/figura_e_prospettiva.html"> Figura e prospettiva </a></li>
+                    <li class="body_li"><a class="body_a" href="../ANNI/2012/fulmine_compositore.html"> Fulmine compositore </a></li>
+                    <li class="body_li"><a class="body_a" href="../ANNI/2012/il_treno.html"> Il treno </a></li>
+                    <li class="body_li"><a class="body_a" href="../ANNI/2012/le_lavandaie.html"> Le lavandaie </a></li>
+                    <li class="body_li"><a class="body_a" href="../ANNI/2012/riflessi_su_adria.html"> Riflessi su adriana </a></li>
+                    <li class="body_li"><a class="body_a" href="../ANNI/2012/sogni_al_tramonto.html"> Sogni al tramonto </a></li>
+                  </ul>
+                </nav>
                 
                 <h5></h5>
 
@@ -44,59 +65,4 @@
         Luppi Oscar, Copyright &copy; 2023
     </footer>
     
-</html>
-
-
-
-<html>
-<head>
-  <title> Anno 2012 </title>
-  <style>
-    .button {
-        width: auto;
-        height: 30px;
-        text-align: center;
-        background-color: #EFF299;
-    }
-    .button-text {
-        text-decoration: none;
-        font-weight: bold;
-        font-family: Arial;
-        color: #000000;
-    }
-  </style>
-</head>
-<body>
-
-  <script>
-    // Directory che contiene i file HTML
-    const directory = '../ANNI/2012/';
-
-    // Lista dei nomi dei file HTML
-    const fileNames = [
-      'fulmine_compositore.html',
-      'sogni_al_tramonto.html',
-      'figura_e_prospettiva.html',
-      'riflessi_su_adria.html',
-      'il_treno.html',
-      'le_lavandaie.html',
-      // Aggiungi qui gli altri nomi dei file HTML
-    ];
-
-    // Genera i bottoni per i file HTML
-    const buttonsContainer = document.getElementById('buttons-container');
-    fileNames.forEach(filename => {
-        const button = document.createElement('button');
-        const buttonText = document.createElement('span');
-        buttonText.textContent = filename.replace(/\.html$/, '').toLowerCase().replace('_', ' ').replace('_', ' ');
-        buttonText.classList.add('button-text');
-        button.appendChild(buttonText);
-        button.classList.add('button');
-        button.addEventListener('click', () => {
-        window.location.href = directory + filename;
-      });
-      buttonsContainer.appendChild(button);
-    });
-  </script>
-</body>
 </html>
