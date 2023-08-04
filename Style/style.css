@@ -203,7 +203,7 @@ header a:hover{
 
 .body_li{
     float:left;
-    display:inline;
+    display:inline-flex;
     padding: 0 20px 0 20px;
     border:#79A637 3px solid;
 }
