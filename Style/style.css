@@ -228,11 +228,13 @@ header a:hover{
 /* Info page */ 
 
 .section-1{
+  padding-left: 150px;
   text-align: left;
   background-color: #B2F252;
 }
 
 .section-2{
+  padding-right: 150px;
   text-align: right;
   background-color: #B2F252;
 }
