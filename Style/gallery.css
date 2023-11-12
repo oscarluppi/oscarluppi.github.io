@@ -9,7 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: url(../Immagini/[BACKGROUND]/pexels-eberhard-grossgasteiger-1421903.jpg);
-    background-size: cover;
+    background-size: auto;
     transform-style: preserve-3d;
 }
 .box {
