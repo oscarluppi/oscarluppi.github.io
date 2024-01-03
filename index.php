@@ -25,29 +25,47 @@
             
             <?php
 
-            $prodotti = array(
-                "p1" => "prova1",
-                "p2" => "prova2",
-                "p3" => "prova3",
-                "p4" => "prova4",
-                "p5" => "prova5",
-                "p6" => "prova6",
-                "p7" => "prova7"
-            );
+            //credenziali collegamento
+            $server = "localhost";
+            $username = "oscargallery";
+            $password = "";
+            $database = "my_oscargallery";
 
-            foreach ($prodotti as $nome => $descrizione) {
+            //connessione al database
+            $conn = new mysqli($server, $username, $password, $database);
 
-                echo "<div class=\"col-12 col-sm-4 col-lg-3 col-xl-2 p-3\">\n";
-                echo "  <div class=\"card w-100\">\n";
-                echo "      <img src=\"img/nuke bot.jpg\" class=\"card-img-top\" alt=\"Foto quadro\">\n";
-                echo "      <div class=\"card-body\">\n";
-                echo "          <h5 class=\"card-title\">$nome</h5>\n";
-                echo "          <p class=\"card-text\">$descrizione</p>\n";
-                echo "          <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n";
-                echo "      </div>\n";
-                echo "  </div>\n";
-                echo "</div>\n";
+            //controllo connessione
+            if ($conn->connect_error) {
+                die ("connessione fallita: ". $conn->connect_error);
             }
+
+            //preparazione della query
+            $sql = "SELECT * FROM quadri";
+            $result = $conn->query($sql);
+            
+            //risultati 
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $nome = $row['nome'];
+                    $descrizione = $row['descrizione'];
+                    $foto = $row['foto'];
+                    
+                    echo "<div class=\"col-12 col-sm-4 col-lg-3 col-xl-2 p-3\">\n";
+                    echo "  <div class=\"card w-100\">\n";
+                    echo "      <img src=\"$foto\" class=\"card-img-top\" alt=\"Foto quadro\">\n";
+                    echo "      <div class=\"card-body\">\n";
+                    echo "          <h5 class=\"card-title\">$nome</h5>\n";
+                    echo "          <p class=\"card-text\">$descrizione</p>\n";
+                    echo "          <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n";
+                    echo "      </div>\n";
+                    echo "  </div>\n";
+                    echo "</div>\n";
+                }
+            } else {
+                echo "<p>Nessun risultato<p>";
+            }
+            
+            $conn->close();
 
             ?>
             
